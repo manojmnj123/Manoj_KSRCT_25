@@ -31,3 +31,17 @@ Sample Output 0
 
 False
 
+def is_leap(year):
+    leap = False
+    is_leap = True
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0:
+                return is_leap
+            else:
+                return leap
+        else:
+            return is_leap
+    else:
+        return leap
+
